@@ -1,3 +1,4 @@
 [submodule "NativeCode"]
 	path = NativeCode
 	url = https://github.com/rlabrecque/SteamworksSDK.git
+	branch = main
