@@ -1,0 +1,5 @@
+# Auto detect text files, normalize to LF in the repo,
+# and always check out as LF too
+* text=auto eol=lf
+# Custom for Visual Studio
+*.cs     diff=csharp

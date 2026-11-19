@@ -1,0 +1,12 @@
+bin/
+Bin/
+obj/
+.vs/
+.vscode/
+.idea/
+Cache/
+*.suo
+*.csproj.user
+*.sdpkg.user
+*.log
+TestResults/
