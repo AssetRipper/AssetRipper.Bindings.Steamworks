@@ -1,0 +1,15 @@
+CCallbackBase::CCallbackBase
+CGameID::CGameID
+CGameID::Render
+CSteamID::BValidExternalSteamID
+CSteamID::CSteamID
+CSteamID::Render
+ISteamClient::DEPRECATED_Remove_SteamAPI_CPostAPIResultInProcess
+ISteamClient::DEPRECATED_Set_SteamAPI_CPostAPIResultInProcess
+ISteamClient::Set_SteamAPI_CCheckCallbackRegisteredInProcess
+ISteamClient::SetWarningMessageHook
+ISteamHTMLSurface
+ISteamInput::EnableActionEventCallbacks
+ISteamNetworkingUtils::SetDebugOutputFunction
+ISteamUser::TrackAppUsageEvent
+ISteamUtils::SetWarningMessageHook

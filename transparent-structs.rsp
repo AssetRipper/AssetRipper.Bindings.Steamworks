@@ -1,0 +1,4 @@
+HSteamPipe=int
+HSteamUser=int
+SteamAPICall_t=ulong
+uint64_steamid=ulong
