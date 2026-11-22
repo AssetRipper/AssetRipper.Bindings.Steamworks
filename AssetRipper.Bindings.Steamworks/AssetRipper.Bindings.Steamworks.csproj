@@ -1,11 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <ImplicitUsings>disable</ImplicitUsings>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <IsAotCompatible>true</IsAotCompatible>
   </PropertyGroup>
   <PropertyGroup>
-    <!-- Disable warning for unused private fields -->
-    <NoWarn>$(NoWarn);CS0169</NoWarn>
+    <PackageId>AssetRipper.Bindings.Steamworks</PackageId>
+    <PackageTags>Steamworks;Bindings;Native</PackageTags>
+    <RepositoryUrl>https://github.com/AssetRipper/AssetRipper.Bindings.Steamworks</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/AssetRipper/AssetRipper.Bindings.Steamworks</PackageProjectUrl>
+    <Copyright>Copyright (c) 2026 ds5678</Copyright>
+    <Description>Cross-platform low-level bindings for the Steamworks API.</Description>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- CS0169: Private fields in native interop layouts may be intentionally unused. -->
+    <!-- CS1591: Generated public APIs do not include XML documentation comments. -->
+    <NoWarn>$(NoWarn);CS0169;1591</NoWarn>
   </PropertyGroup>
 </Project>
