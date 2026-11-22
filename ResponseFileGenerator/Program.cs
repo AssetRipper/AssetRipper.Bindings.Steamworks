@@ -21,8 +21,8 @@ HashSet<string> functions = new(StringComparer.Ordinal);
 CollectDeclarations(root, null);
 
 Directory.CreateDirectory(args[1]);
-WriteResponseFile("windows_attributes.rsp", "WindowsApi", "SupportedOSPlatform(\"windows\")");
-WriteResponseFile("unix_attributes.rsp", "UnixApi", "SupportedOSPlatform(\"macos\")", "SupportedOSPlatform(\"linux\")");
+WriteResponseFile("windows-attributes.rsp", "WindowsApi", "SupportedOSPlatform(\"windows\")");
+WriteResponseFile("unix-attributes.rsp", "UnixApi", "SupportedOSPlatform(\"macos\")", "SupportedOSPlatform(\"linux\")");
 File.WriteAllLines(
     Path.Combine(args[1], "usings.rsp"),
     functions.Order(StringComparer.Ordinal).Select(name => $"{name}=System.Runtime.Versioning"));

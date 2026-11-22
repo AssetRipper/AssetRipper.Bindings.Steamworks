@@ -3,7 +3,7 @@ NativeCode\public\steam\steam_api_flat.h
 --include-directory
 NativeCode\public
 --traverse
-@steam_header_files.rsp
+@steam-header-files.rsp
 --namespace
 PlaceholderNamespace
 --method-class-name

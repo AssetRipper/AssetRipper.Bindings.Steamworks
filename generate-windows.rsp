@@ -5,7 +5,7 @@ NativeCode\public
 --additional
 --target=x86_64-pc-windows-msvc
 --traverse
-@steam_header_files.rsp
+@steam-header-files.rsp
 --header-file
 Header.txt
 --namespace
@@ -35,7 +35,7 @@ HSERVERQUERY_INVALID
 --with-transparent-struct
 @transparent-structs.rsp
 --with-attribute
-@windows_attributes.rsp
+@windows-attributes.rsp
 --with-using
 @usings.rsp
 --with-access-specifier
