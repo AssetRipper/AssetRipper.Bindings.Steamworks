@@ -10,3 +10,7 @@ Cache/
 *.sdpkg.user
 *.log
 TestResults/
+output.xml
+unix-attributes.rsp
+usings.rsp
+windows-attributes.rsp
