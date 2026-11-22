@@ -6,6 +6,7 @@
     <IsAotCompatible>true</IsAotCompatible>
   </PropertyGroup>
   <PropertyGroup>
+    <VersionPrefix>1.0.0</VersionPrefix>
     <PackageId>AssetRipper.Bindings.Steamworks</PackageId>
     <PackageTags>Steamworks;Bindings;Native</PackageTags>
     <RepositoryUrl>https://github.com/AssetRipper/AssetRipper.Bindings.Steamworks</RepositoryUrl>
