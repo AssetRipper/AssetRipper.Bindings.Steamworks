@@ -7,3 +7,5 @@ This is a cross-platform .NET 10 library for 64 bit architectures. It provides l
 Steamworks has differing behavior on Windows and Unix, particularly around struct layout (search for VALVE_CALLBACK_PACK_SMALL or VALVE_CALLBACK_PACK_LARGE). In addition, Windows uses the library name `steam_api64` and Unix uses `libsteam_api`.
 
 To handle this, we provide two sets of bindings, each one marked with `SupportedOSPlatformAttribute` to encourage responsible use.
+
+The NuGet package includes 64-bit Steamworks native libraries for Android ARM64, Linux x64 and ARM64, macOS x64 and ARM64, and Windows x64.
