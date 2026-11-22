@@ -1,10 +1,10 @@
 @echo off
 setlocal
-pushd "%~dp0" || exit /b 1
+pushd "%~dp0.." || exit /b 1
 
 set "INCLUDE=%CD%\Cache\linux-sysroot\usr\include"
 if not exist "%INCLUDE%\string.h" (
-    echo Linux headers not found. Run download-linux-headers.ps1 first.
+    echo Linux headers not found. Run Scripts\download-linux-headers.ps1 first.
     popd
     exit /b 1
 )
@@ -22,7 +22,7 @@ if not exist "%RESOURCE_DIR%\include\stddef.h" (
     exit /b 1
 )
 
-call ClangSharpPInvokeGenerator @generate-unix.rsp --resource-directory "%RESOURCE_DIR%" --additional -isystem --additional "%INCLUDE%" --additional -isystem --additional "%INCLUDE%\x86_64-linux-gnu" %*
+call ClangSharpPInvokeGenerator @Scripts\generate-unix.rsp --resource-directory "%RESOURCE_DIR%" --additional -isystem --additional "%INCLUDE%" --additional -isystem --additional "%INCLUDE%\x86_64-linux-gnu" %*
 set "RESULT=%ERRORLEVEL%"
 if not "%RESULT%"=="0" echo ClangSharpPInvokeGenerator failed with exit code %RESULT%.
 popd

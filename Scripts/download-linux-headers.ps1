@@ -1,5 +1,5 @@
 param(
-    [string] $Destination = (Join-Path $PSScriptRoot 'Cache\linux-sysroot'),
+    [string] $Destination = (Join-Path $PSScriptRoot '..\Cache\linux-sysroot'),
     [string] $SevenZip = '7z'
 )
 

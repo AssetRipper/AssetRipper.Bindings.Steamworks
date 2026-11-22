@@ -1,8 +1,8 @@
 @echo off
 setlocal
-pushd "%~dp0" || exit /b 1
+pushd "%~dp0.." || exit /b 1
 
-call ClangSharpPInvokeGenerator @generate-transparent-structs.rsp
+call ClangSharpPInvokeGenerator @Scripts\generate-transparent-structs.rsp
 set "RESULT=%ERRORLEVEL%"
 if not "%RESULT%"=="0" goto failed
 

@@ -11,6 +11,6 @@ Cache/
 *.log
 TestResults/
 output.xml
-unix-attributes.rsp
-usings.rsp
-windows-attributes.rsp
+Scripts/unix-attributes.rsp
+Scripts/usings.rsp
+Scripts/windows-attributes.rsp

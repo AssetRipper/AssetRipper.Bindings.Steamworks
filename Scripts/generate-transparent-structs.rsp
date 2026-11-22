@@ -21,4 +21,4 @@ helper-types
 --exclude
 *
 --with-transparent-struct
-@transparent-structs.rsp
+@Scripts\transparent-structs.rsp
