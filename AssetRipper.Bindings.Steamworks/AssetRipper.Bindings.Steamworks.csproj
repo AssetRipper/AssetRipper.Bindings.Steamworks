@@ -6,4 +6,8 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <IsAotCompatible>true</IsAotCompatible>
   </PropertyGroup>
+  <PropertyGroup>
+    <!-- Disable warning for unused private fields -->
+    <NoWarn>$(NoWarn);CS0169</NoWarn>
+  </PropertyGroup>
 </Project>

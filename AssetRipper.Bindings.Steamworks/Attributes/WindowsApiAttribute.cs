@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 
 namespace AssetRipper.Bindings.Steamworks.Attributes;
 
@@ -11,5 +12,6 @@ namespace AssetRipper.Bindings.Steamworks.Attributes;
                 AttributeTargets.Method |
                 AttributeTargets.Property |
                 AttributeTargets.Struct,
-                AllowMultiple = false, Inherited = false)]
+                AllowMultiple = true, Inherited = false)]
+[Conditional("DEBUG")]
 internal sealed class WindowsApiAttribute : Attribute;
